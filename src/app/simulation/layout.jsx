@@ -1,5 +1,5 @@
-export const dynamic = 'force-dynamic';
+"use client";
 
 export default function SimulationLayout({ children }) {
-  return children;
+  return <>{children}</>;
 }
