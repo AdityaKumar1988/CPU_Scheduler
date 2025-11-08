@@ -1,6 +1,4 @@
 "use client";
-export const dynamic = "force-dynamic";
-export const fetchCache = "force-no-store";
 
 import { Suspense } from "react";
 import { useEffect, useState, useMemo } from 'react';
@@ -12,13 +10,9 @@ import { runSimulation } from '@/lib/scheduling';
 import { Bot, LineChart } from 'lucide-react';
 import { Progress } from '@/components/ui/progress';
 
-export default function SimulationPage() {
-  return (
-    <Suspense fallback={<div className="text-center mt-20">Loading simulation...</div>}>
-      <SimulationContent />
-    </Suspense>
-  );
-}
+// Move these exports AFTER the "use client" directive
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
 
 function SimulationContent() {
   const router = useRouter();
@@ -147,5 +141,20 @@ function SimulationContent() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function SimulationPage() {
+  return (
+    <Suspense fallback={
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="text-center text-muted-foreground p-8">
+          <Bot size={48} className="mx-auto mb-4 animate-pulse" />
+          <h3 className="text-xl font-semibold">Loading simulation...</h3>
+        </div>
+      </div>
+    }>
+      <SimulationContent />
+    </Suspense>
   );
 }
