@@ -1,12 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  // ✅ Enables static export for Netlify
+  output: 'export',
+
+  // ✅ Allows build even with TypeScript or ESLint issues
   typescript: {
     ignoreBuildErrors: true,
   },
   eslint: {
     ignoreDuringBuilds: true,
   },
+
+  // ✅ Safe remote image configuration
   images: {
     remotePatterns: [
       {
@@ -29,8 +34,6 @@ const nextConfig = {
       },
     ],
   },
-  experimental: {
-    missingSuspenseWithCSRBailout: false,
-  },
 };
+
 module.exports = nextConfig;
