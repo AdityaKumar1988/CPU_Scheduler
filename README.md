@@ -92,7 +92,7 @@ This project is developed as part of an **Operating Systems course**, aiming to 
 
 ## 👨‍💻 Author
 
-**Aditya Kumar**  
+**Aditya Kumar Jha**  
 🎓 Student | 💻 Developer  
 
 ⭐ If you find this project helpful, consider starring the repository!
