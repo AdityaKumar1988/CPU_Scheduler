@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { SimulationContent } from "./SimulationContent";
+import SimulationContent from "./SimulationContent";
 
 export default function SimulationPage() {
   return (
