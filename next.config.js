@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // ✅ Enables static export for Netlify
-  output: 'export',
+  // ❌ Removed static export (required for dynamic rendering)
 
-  // ✅ Allows build even with TypeScript or ESLint issues
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -11,25 +9,21 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
 
-  // ✅ Safe remote image configuration
   images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'placehold.co',
-        port: '',
         pathname: '/**',
       },
       {
         protocol: 'https',
         hostname: 'images.unsplash.com',
-        port: '',
         pathname: '/**',
       },
       {
         protocol: 'https',
         hostname: 'picsum.photos',
-        port: '',
         pathname: '/**',
       },
     ],
