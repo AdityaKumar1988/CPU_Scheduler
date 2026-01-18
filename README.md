@@ -44,7 +44,7 @@ The simulator includes both **classical** and **real-time** CPU scheduling algor
 - **Earliest Deadline First (EDF)**
 - **Rate Monotonic Scheduling (RMS)**
 
-Each algorithm is visualized using a **dynamic Gantt chart**, allowing users to clearly observe task execution order and timing.
+Each algorithm is visualized using a **Dynamic Gantt chart**, allowing users to clearly observe task execution order and timing.
 
 ---
 
@@ -70,8 +70,6 @@ Each algorithm is visualized using a **dynamic Gantt chart**, allowing users to 
 ### 📊 Results & Performance Analysis
 ![Results Page](screenshots/results.png)
 
-> *(You can add images inside a `screenshots/` folder in your repository)*
-
 ---
 
 ## 🧠 Educational Purpose
@@ -92,7 +90,7 @@ This project is developed as part of an **Operating Systems course**, aiming to 
 ---
 
 
-## 👨‍💻 Aditya Kumar Jha
+## 👨‍💻 Author
 
 **Aditya Kumar**  
 🎓 Student | 💻 Developer  
